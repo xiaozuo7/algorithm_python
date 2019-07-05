@@ -5,7 +5,6 @@
 说明：
 你可以假设 k 总是有效的，1 ≤ k ≤ 二叉搜索树元素个数。
 
-来源：力扣（LeetCode）
 
 @author: xiaozuo
 """
