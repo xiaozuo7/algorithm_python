@@ -21,6 +21,7 @@ def insertionSort(arr):
         arr[preIndex+1]=cur
     return arr
 
+
 if __name__ == '__main__':
     list = [1, 5, 8, 123, 22, 54, 7, 99, 300, 222]
     print("before:{}".format(list))
