@@ -4,10 +4,10 @@
 @author: xiaozuo
 """
 def fib(n):
-    a = b = 1
+    a,b = 1,1
     for i in range(n):
-        yield a
-        a, b = b, a + b
+        a,b = b, a+b
+    return a
 
-for x in fib(21):
-    print(f'{x}')
+if __name__ == '__main__':
+    print(fib(2))
