@@ -1,2 +1,3 @@
-offer是剑指offer的一些算法题
-本仓库所有题目都是python解法
+offer --> 剑指offert
+leetcode --> python的解法
+binarytree --> 二叉树相关
