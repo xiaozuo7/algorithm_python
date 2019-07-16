@@ -32,7 +32,7 @@ class TreeNode:
 
 class Solution:
     """层序遍历"""
-    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    def levelorder(self, root: TreeNode) -> List[List[int]]:
         if not root: return []
         res = []
         queue = [root]   # 用队列实现
