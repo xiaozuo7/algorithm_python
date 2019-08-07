@@ -29,6 +29,6 @@ class Solution:
         slow = dummy
         while fast and fast.next:
             fast = fast.next
-            slow = slow.nexy
+            slow = slow.next
         slow.next = slow.next.next
         return dummy.next
