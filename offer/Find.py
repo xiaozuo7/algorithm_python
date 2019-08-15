@@ -20,3 +20,15 @@ class Solution:
                 if k == target:
                     return True
         return False
+
+
+    def Find1(self, target, array):
+        # write code here
+        if len(array) == 0 or len(array[0]) == 0: return False
+        j = -1
+        for row in array:
+            while j > -len(row) and row[j] > target:
+                j -= 1
+            if row and row[j] == target:
+                return True
+        return False
