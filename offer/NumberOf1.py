@@ -11,6 +11,8 @@
 把原来的整数和减去1之后的结果做  与  运算，从原来整数最右边一个1那一位开始所有位都会变成0
 举例来说，6的二进制是 110 ，6-1=5的二进制是 101，6&5=100， 如此操作之后6中原来的110变为100，循环计数统计1的个数，直至n变为0为止。
 
+python2 分int32 和 int 64
+python3 超过32和64后, 自动转型为长整形, 长整形理论上没有限制
 @author: xiaozuo
 """
 class Solution:
@@ -21,3 +23,12 @@ class Solution:
             count += 1
             n = n & (n-1)
         return count
+
+    def NumberOf1_bin(self, n):
+        return bin(n & 0xffffffff).count('1')
+
+if __name__ == '__main__':
+    sol = Solution()
+    n = 6
+    print(sol.NumberOf1(n=n))
+    print(sol.NumberOf1_bin(n=n))
