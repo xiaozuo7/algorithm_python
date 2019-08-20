@@ -28,5 +28,5 @@ class Solution:
 
 if __name__ == '__main__':
     sol = Solution()
-    s = "U love  I"
+    s = "I am a student."
     print(sol.reverseWords(s))

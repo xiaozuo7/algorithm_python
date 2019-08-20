@@ -30,4 +30,3 @@ class Solution:
             for i in left + right:
                 res.append([root.val] + i)
             return res
-        
