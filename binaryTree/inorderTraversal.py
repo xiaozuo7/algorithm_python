@@ -29,7 +29,7 @@ class Solution:
     """中序遍历"""
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         if not root:return []
-        stack = [(root,False)]
+        stack = [(root, False)]
         res = []
         while stack:
             cur, vis = stack.pop()
