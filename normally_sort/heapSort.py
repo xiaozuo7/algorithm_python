@@ -11,6 +11,9 @@
 复杂度分析： O(nlogn)
 @author: xiaozuo
 """
+# 注意
+# heapq  库函数
+
 
 def buildMaxHeap(arr):
     import math

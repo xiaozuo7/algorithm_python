@@ -6,10 +6,15 @@
 思路：快排
 @author: xiaozuo
 """
+
+
 class Solution:
     def GetLeastNumbers_Solution(self, tinput, k):
         if k > len(tinput) or k < 0 or not tinput:
             return []
+        # import heapq
+        # return heapq.nsmallest(k, arr)
+
         res = self.quicksort(tinput)
         return res[:k]
     def quicksort(self, arr):
