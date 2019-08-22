@@ -13,26 +13,24 @@
 """
 
 def mergeSort(arr):
-    import math
-    if len(arr)<2:return arr
-    mid = math.floor(len(arr)/2) # 一分为二
-    left = arr[0:mid]
-    right = arr[mid:]
-    return merge(mergeSort(left), mergeSort(right))
-
-def merge(left, right):
+    if len(arr) < 2:
+        return arr
+    mid = len(arr) // 2
+    left = mergeSort(arr[:mid])
+    right = mergeSort(arr[mid:])
+    l = 0
+    r = 0
     res = []
-    while left and right:
-        if left[0] <= right[0]:
-            res.append(left.pop(0))
+    while l < len(left) and r < len(right):
+        if left[l] <= right[r]:
+            res.append(left[l])
+            l += 1
         else:
-            res.append(right.pop(0))
-    while left:
-        res.append(left.pop(0))
-    while right:
-        res.append(right.pop(0))
+            res.append(right[r])
+            r += 1
+    res += left[l:]
+    res += right[r:]
     return res
-
 if __name__ == '__main__':
     list = [1, 5, 8, 123, 22, 54, 7, 99, 300, 222]
     print("before:{}".format(list))
