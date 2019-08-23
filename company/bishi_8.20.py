@@ -8,7 +8,7 @@ bilbili笔试考试
 """
 # 第一题 反转单词
 s = input()
-res = " ".join(s.split()[::-1])
+res = " ".join(s.split(' ')[::-1])
 print(res)
 
 
