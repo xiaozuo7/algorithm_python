@@ -14,6 +14,7 @@
 
 class Solution:
     def Permutation(self, ss):
+        """字符串的排列"""
         # write code here
         if not ss or len(ss) > 9: return []
         res = []
