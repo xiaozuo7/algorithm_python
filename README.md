@@ -1,3 +1,2 @@
-offer --> 剑指offert
-leetcode --> python的解法
-binarytree --> 二叉树相关
+Python Algorithm
+https://leetcode-cn.com/u/xiaozuo7/
